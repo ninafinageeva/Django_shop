@@ -1,16 +1,26 @@
+# from catalog.models import Product
 from django.shortcuts import render
 
-# Create your views here.
-def index(request):
-    return render(request, 'catalog/index.html')
-
-
-def contacts(request):
-    if request.method == 'POST':
-        # в переменной request хранится информация о методе, который отправлял пользователь
-        name = request.POST.get('name')
-        phone = request.POST.get('phone')
-        message = request.POST.get('message')
-        # а также передается информация, которую заполнил пользователь
-        print(f'Имя: {name}\nТелефон: {phone}\nСообщение: {message}')
-    return render(request, 'catalog/contacts.html')
+# def base(request):
+#
+#     Product_list = Product.objects.all()
+#     content = {
+#         'object_list': Product_list,
+#         'title': 'Каталог',
+#     }
+#     return render(request, 'catalog/base.html', content)
+#
+# def data(request):
+#     Product_list = Product.objects.all()
+#     content = {
+#         'object_list': Product_list,
+#     }
+#     return render(request, 'catalog/data.html', content)
+#
+# def description(request, pk):
+#     Description_list = Product.objects.get(pk=pk)
+#     content = {
+#         'object_list': Description_list,
+#         'title': 'Описание',
+#     }
+#     return render(request, 'catalog/desc.html', content)
