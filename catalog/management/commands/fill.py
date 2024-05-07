@@ -8,10 +8,14 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         Product.objects.all().delete()
         products_list = [
-            {'name':'змея', 'description':'ужужужужуж', 'image':'', 'category':'от ежа', 'price':1, 'date_cr':'1555-12-12', 'date_ch':'1555-12-12'},
-            {'name':'змея', 'description':'ужужужужуж', 'image':'', 'category':'от ежа', 'price':2, 'date_cr':'1555-12-12', 'date_ch':'1555-12-12'},
-            {'name':'змея', 'description':'ужужужужуж', 'image':'', 'category':'от ежа', 'price':12, 'date_cr':'1555-12-12', 'date_ch':'1555-12-12'},
-            {'name':'змея', 'description':'ужужужужуж', 'image':'', 'category':'от ежа', 'price':21, 'date_cr':'1555-12-12', 'date_ch':'1555-12-12'}
+            {'name': 'змея', 'description': 'ужужужужуж', 'image': '', 'category': 'от ежа', 'price': 1,
+             'date_cr': '1555-12-12', 'date_ch': '1555-12-12'},
+            {'name': 'змея', 'description': 'ужужужужуж', 'image': '', 'category': 'от ежа', 'price': 2,
+             'date_cr': '1555-12-12', 'date_ch': '1555-12-12'},
+            {'name': 'змея', 'description': 'ужужужужуж', 'image': '', 'category': 'от ежа', 'price': 12,
+             'date_cr': '1555-12-12', 'date_ch': '1555-12-12'},
+            {'name': 'змея', 'description': 'ужужужужуж', 'image': '', 'category': 'от ежа', 'price': 21,
+             'date_cr': '1555-12-12', 'date_ch': '1555-12-12'}
         ]
 
         products_cr = []
