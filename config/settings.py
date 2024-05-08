@@ -53,7 +53,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hw20_1',
+        'NAME': 'HW_20_1',
         'USER': 'postgres',
         'PASSWORD': '54321',
         'HOST': '127.0.0.1',
@@ -92,5 +92,3 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
